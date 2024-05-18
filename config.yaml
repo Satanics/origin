@@ -1,1 +1,2 @@
 Repositorytype: PostgresRepository
+URL: "postgresql://postgres:postgres@localhost/test_work"

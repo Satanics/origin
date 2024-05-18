@@ -1,9 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import  Column, Integer, String
+from app import SQLALCHEMY_DATABASE_URL
 
-
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/test_work"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 conn = engine.connect()

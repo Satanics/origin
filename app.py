@@ -13,6 +13,8 @@ if config['Repositorytype'] == 'PostgresRepository':
 elif config['Repositorytype'] == 'MemoryRepository':
     state = MemoryRepository()
 
+SQLALCHEMY_DATABASE_URL = config['URL']
+
 app = FastAPI()
 
 def Repository_factory() -> dict:
